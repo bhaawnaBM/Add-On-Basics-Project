@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transform</title>
+    <style>
+      body {
+        margin: 200px;
+      }
+      img {
+        width: 200px;
+        transition: all 1500ms ease-in-out;
+      }
+
+      img:hover {
+        transform: scale(1.5) rotate(360deg);
+      }
+
+      .img1 {
+        transform: scale(0.5) rotate(120deg);
+      }
+
+      .img2 {
+        transform: rotate(75deg);
+      }
+
+      .img3 {
+        transform: translateX(-50px) rotate(-25deg) scale(1.2);
+      }
+
+      .img4 {
+        transform: translateY(-100px) scale(0.8) rotate(50deg) translateX(200px);
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQ-mcFAHl7ujNWezhykMX5PMQuyojk89aDD6l8fgltFpR93GXEdA_8tpYbwUPnoz1gcygBHeW-O-qIZRuyYSj-hkg-eGg"
+      alt=""
+      class="img1"
+    />
+    <img
+      src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQOItDkZ7XDdb4BuXb-tYyvHLLNZIx7wpRPUdj1uygyVjSaLDSZ01kTEREEMjxm2ObJqsQhtAXM965wlw00nphxthzGoA"
+      alt=""
+      class="img2"
+    />
+    <img
+      src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQydbHoC53eytTuEZMn4TzrM2eNprJuneobi9vS6KIc1WR0mxF-bH9gjhn0mC00km_6Fvf73EFkFayh5399a9ckqVJkDg"
+      alt=""
+      class="img3"
+    />
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrpo5ur1qSuIAWiLcGllDVLB9nxrm6dcwwJA&usqp=CAU"
+      alt=""
+      class="img4"
+    />
+  </body>
+</html>

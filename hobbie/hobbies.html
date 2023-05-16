@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hobbies</title>
+    <style>
+      body {
+        text-align: center;
+        margin: 10px;
+        color: #272142;
+        font-family: "Cerebri Sans";
+        background-color: #e5e5f7;
+        background-image: radial-gradient(#bdbfe3 0.5px, #e5e5f7 0.5px);
+        background-size: 10px 10px;
+      }
+
+      .dark {
+        background: black;
+        color: white;
+      }
+
+      .dark .container {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .dark a {
+        color: plum;
+      }
+
+      .dark button {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+      }
+
+      .dark .changeTheme:hover {
+        background: #885df1;
+        color: white;
+      }
+      .logo {
+        max-width: 200px;
+        display: block;
+        margin: 40px auto;
+      }
+
+      .changeTheme {
+        display: block;
+        background: #885df1;
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 50px;
+        border: none;
+        padding: 15px 20px;
+        cursor: pointer;
+        transition: all 150ms ease-in-out;
+        margin: 0 auto;
+      }
+
+      .changeTheme:hover {
+        color: white;
+        background: #885df1;
+      }
+
+      .classesButton {
+        background: #885df1;
+        color: white;
+        display: block;
+        margin: 60px auto;
+        width: 90%;
+        border-radius: 50px;
+        border: none;
+        font-size: 24px;
+        font-family: "Cerebri Sans";
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 15px 20px;
+        cursor: pointer;
+        transition: all 150ms ease-in-out;
+        border: 1px solid transparent;
+      }
+
+      .classesButton:hover {
+        background: white;
+        color: #885df1;
+        border: 2px solid #885df1;
+        cursor: pointer;
+      }
+
+      .container {
+        box-shadow: 0px 30px 50px rgba(57, 48, 90, 0.1);
+        margin: 50px auto;
+        background: #fff;
+        max-width: 550px;
+        padding: 40px;
+        border-radius: 16px;
+      }
+
+      img {
+        border-radius: 12px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: left;
+      }
+
+      a {
+        text-align: left;
+        font-size: 20px;
+        color: #885df1;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      a:hover {
+        text-decoration: none;
+        opacity: 0.6;
+      }
+
+      .biryani {
+        margin: 15px 0;
+        transition: all 150ms ease-in-out;
+        width: 520px;
+      }
+      .biryani:hover {
+        transform: scale(1.5);
+      }
+
+      .img-grid img {
+        margin: 10px 10px;
+        width: 240px;
+        height: 140px;
+        transition: filter 150ms ease-in-out;
+      }
+
+      .img-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        aspect-ratio: 16/9;
+      }
+
+      .img-grid img:hover {
+        filter: contrast(50%);
+        transform: scale(1.2);
+      }
+
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 16px;
+        font-family: "PT Mono", monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.shecodes.io/" target="_blank">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-development/uploads/files/000/000/001/original/logo.png?1627901693"
+        alt=""
+        class="logo"
+      />
+    </a>
+    <button id="change-theme" class="changeTheme">CHANGE THEME</button>
+    <div class="container">
+      <h1>Cooking</h1>
+      <h2>My Favourite Dishes</h2>
+      <a href="https://en.wikipedia.org/wiki/Biryani" target="_blank">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9meeHucFddv8b_fkEfhudkw-kD61jQ5c9cg&usqp=CAU"
+          alt="biryani"
+          class="biryani"
+        />
+      </a>
+      <div class="img-grid">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnzlPQQMYg1n1NVfIocmNtYJflQOdZGghemA&usqp=CAU"
+          alt="caprese"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-50Fk2VHueObkxlG0BMu9fNsLqyx0NJBKiA&usqp=CAU"
+          alt="aligot"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpxQVmmHGFwjQt-MjSFnxK1tUHcxwUfH1n9A&usqp=CAU"
+          alt="dal"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYOkADJQzpAXl-J2KQz7BW9qemc8ectcZovA&usqp=CAU"
+          alt="salad"
+        />
+      </div>
+      <div>
+        <p>
+          Cooking, cookery, or culinary arts is the art, science and craft of
+          using heat to improve the palatability, digestibility, nutrition, or
+          safety of food. Cooking techniques and ingredients vary widely, from
+          grilling food over an open fire to using electric stoves, to baking in
+          various types of ovens, reflecting local conditions. Types of cooking
+          also depend on the skill levels and training of the cooks. Cooking is
+          done both by people in their own dwellings and by professional cooks
+          and chefs in restaurants and other food establishments.
+          <br />
+          <br />📖
+          <a
+            href="https://en.wikipedia.org/wiki/Cooking"
+            target="_blank"
+            class="link"
+            ><strong>Read on Wikipedia</strong>
+          </a>
+        </p>
+        <div>
+          <button id="classes" class="classesButton">
+            GET IN TOUCH FOR A CLASSES
+          </button>
+        </div>
+        <footer>
+          Coded by <a href="https://shecodes.io">SheCodes</a> with HTML, CSS and
+          JavaScript
+        </footer>
+        <script>
+          function changeTheme() {
+            let body = document.querySelector("body");
+            if (body.classList.contains("dark")) {
+              body.classList.remove("dark");
+            } else {
+              body.classList.add("dark");
+            }
+          }
+          let themeButton = document.querySelector(".changeTheme");
+          themeButton.addEventListener("click", changeTheme);
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
